@@ -1,0 +1,6 @@
+git status
+git add ==> (staging area)
+git reset head ==> (unstaging area)
+git commit ==> (local repo) git commit -m "comment"
+git push ==> (remote repo)
+git fetch ==> (remote repo)
