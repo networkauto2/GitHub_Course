@@ -1,0 +1,37 @@
+Wireless Mobility Master Setup Procedure
+
+After navigate MM GUI
+
+1. Setup NTP "0.nl.pool.ntp.org" and enable Iburst
+2. Disable SpanningTree ?!! I don't why so check this point
+3. Configure VRRP on 2 MM 
+Advertisement interval (secs): 5
+4. Configure Conductor Redundency
+5. On Mobility Conductor level enable Database sync & Sync period: 30 Min
+show vrrp
+show master-redundancy
+show database synchronize
+Synchronization doesn't include Captive Portal Custom data
+Airmatch database gets synchronized periodically.
+6.On MM level add Controllers from Configuration > Controllers
+7. Go to MM CLI > show switches copy mac under Configuration State then add Controller on Managed Network level
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+
+========================================================
+Important commands
+show configuration node-hierarchy
+show configuration effective
+show configuration effective detail
+show configuration committed ==>Displays the configuration on only local to specific node and not inherited from  parent node in the hierarchy
+show configuration partial
+show rights guest-role
+show user-table ip 1.1.1.1
+show datapath session table | include 1.1.1.1
+show lc-cluster group-membership 

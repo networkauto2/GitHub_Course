@@ -1,0 +1,46 @@
+#System Nodes Configuration Hierarchy
+-MM
+-Hostname (of MM)
+-Managed Network
+Upto 4 nested child nodes can be created under the Managed Network node.
+ManagedNetwork>Africa>Egypt>Cairo>HQ>MC01
+
+#############################################################################################################################################
+
+If there is a conflict or overlap in configuration on any node, the configuration defined on the lower nodes will take precedence over the configuration on the higher nodes when pushing the final configuration.
+
+
+#############################################################################################################################################
+Configuration parameters that cannot be overridden at the lower level nodes. These parameters include the following:
+> Net destinations
+> IP access lists
+> User roles
+> AAA server groups
+> AAA user derivation rules
+
+#############################################################################################################################################
+The following list of services are impacted when the Mobility Master is unreachable:
+> AirGroup operations (centralized mode only) and dashboard visibility
+> UCC dashboard visibility
+> Uncached WebCC lookups
+> AirMatch recalibrations
+> ClientMatch
+> Configuration APIs
+> Wireless intrusion detection and prevention
+
+#############################################################################################################################################
+
+
+
+
+#############################################################################################################################################
+
+
+
+#############################################################################################################################################
+
+
+
+
+#############################################################################################################################################
+
