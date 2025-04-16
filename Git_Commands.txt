@@ -4,6 +4,9 @@ git reset head ==> (unstaging area)
 git commit ==> (local repo) git commit -m "comment"
 git push ==> (remote repo)
 git fetch ==> (remote repo)
+git branch ==> to show branches
+git remote -v ==> to show remote repo
+git  ==> 
 
 # Show All Configurations
 git config -l
