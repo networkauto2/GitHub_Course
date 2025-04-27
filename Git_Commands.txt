@@ -2,11 +2,13 @@ git status
 git add ==> (staging area)
 git reset head ==> (unstaging area)
 git commit ==> (local repo) git commit -m "comment"
-git push origin main ==> (from remote to branch repo)
+git push origin main ==> (update remote from local repo)
 git fetch ==> (remote repo)
 git branch ==> to show branches
 git remote -v ==> to show remote repo
+git clone repo_link ==> to get copy from remote repo to your local drive
 git  ==> 
+
 
 # Show All Configurations
 git config -l
@@ -23,4 +25,3 @@ git config --global --unset user.email
 
 # Edit Configuration
 git config --global --edit
-90D-MC-VA-1K-EG
