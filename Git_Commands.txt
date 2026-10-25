@@ -2,13 +2,15 @@ git status
 git add ==> (staging area)
 git reset head ==> (unstaging area)
 git commit ==> (local repo) git commit -m "comment"
-git push origin main ==> (update remote from local repo)
+git push -u origin main ==> (update remote from local repo)
 git fetch ==> (remote repo)
 git branch ==> to show branches
 git remote -v ==> to show remote repo
-git clone repo_link ==> to get copy from remote repo to your local drive
-git  ==> 
 
+git clone repo_link ==> to get copy from remote repo to your local drive (new user)
+git init ==> create local repo on local drive
+git remote add origin git@github.com:xxxxxx
+git push -u origin main ==> to donwload changes then update your edit
 
 # Show All Configurations
 git config -l
@@ -16,7 +18,6 @@ git help config
 
 # Show User Email
 git config --global user.email
-
 # Change User Email
 git config --global user.email "Your Github Email Here"
 
@@ -25,3 +26,52 @@ git config --global --unset user.email
 
 # Edit Configuration
 git config --global --edit
+==================================================
+Alias
+# Make Alias For Command "status"
+git config --global alias.st status
+
+# Show Alias Content
+git config --global alias.st
+
+# Make Alias For Command "branch"
+git config --global alias.br branch
+
+# Show Alias Content
+git config --global alias.br
+
+# Test "branch" Command
+git branch
+
+# Make Alias For Command "commit -m"
+git config --global alias.cm "commit -m"
+
+# Show Alias Content
+git config --global alias.cm
+
+# Test "branch" Command
+git cm
+
+# Show All Edits
+git config --global --edit
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
+
+==================================================
