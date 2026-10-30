@@ -1,3 +1,4 @@
+### Git commands
 git status
 git add ==> (staging area)
 git reset head ==> (unstaging area)
@@ -12,7 +13,8 @@ git init ==> create local repo on local drive
 git remote add origin git@github.com:xxxxxx
 git push -u origin main ==> to donwload changes then update your edit
 
-# Show All Configurations
+==================================================
+### Show All Configurations
 git config -l
 git help config
 
@@ -26,8 +28,14 @@ git config --global --unset user.email
 
 # Edit Configuration
 git config --global --edit
+
+# Showing all repo in PC
+Get-ChildItem -Path "D:\" -Filter ".git" -Directory -Hidden -Recurse -ErrorAction SilentlyContinue | Select-Object FullName
+
+# If PC setup new OS and user changed "handling error 'fatal: detected dubious ownership in repository at'"
+git config --global --add safe.directory "D:/path"
 ==================================================
-Alias
+### Alias
 # Make Alias For Command "status"
 git config --global alias.st status
 
